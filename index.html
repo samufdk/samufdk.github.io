@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Calculadora Base</h1>
+            <div class="input">
+                Primeiro valor: 
+                <input type="number" name="n1" id="n1">
+                Segundo valor: 
+                <input type="number" name="n2" id="n2">
+            </div>
+            <div class="select">
+                <button onclick="somaValor()" id="som">Soma</button>
+                <button onclick="subValor()" id="sub">Subtração</button>
+                <button onclick="multiValor()" id="mul">Multiplicação</button>
+                <button onclick="divValor()" id="div">Divisão</button>
+            </div>
+            <div class="result">
+                Resultado: 
+            </div>
+        </div>
+    </section>
+</body>
+</html>
