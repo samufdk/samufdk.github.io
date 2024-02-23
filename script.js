@@ -1,28 +1,46 @@
 function somaValor(){
     let n1 = parseInt(document.getElementById('n1').value);
     let n2 = parseInt(document.getElementById('n2').value); 
-    let soma = n1 + n2;
-
-    alert(soma);
+    if (n1 != "" && n2 != "") {
+        let resultado = n1 + n2;
+        document.getElementById("valor").innerHTML = resultado;
+    }else{
+        /*let resultado = "Insira um valor valido";
+        document.getElementById("valor").innerHTML = resultado;*/
+        alert("Insira um valor valido")
+    }
 }
 function subValor(){
     let n1 = parseInt(document.getElementById('n1').value);
     let n2 = parseInt(document.getElementById('n2').value); 
-    let sub = n1 - n2;
-
-    alert(sub);
+    let resultado = n1 - n2;
+    
+    document.getElementById("valor").innerHTML = resultado;
 }
 function multiValor(){
     let n1 = parseInt(document.getElementById('n1').value);
     let n2 = parseInt(document.getElementById('n2').value); 
-    let multi = n1 * n2;
-
-    alert(multi);
+    let resultado = n1 * n2;
+    
+    document.getElementById("valor").innerHTML = resultado;
 }
 function divValor(){
-    let n1 = parseInt(document.getElementById('n1').value);
-    let n2 = parseInt(document.getElementById('n2').value); 
-    let div = n1 / n2;
-
-    alert(div);
+    var n1 = parseInt(document.getElementById('n1').value);
+    var n2 = parseInt(document.getElementById('n2').value); 
+    var resultado = n1 / n2;
+    
+    document.getElementById("valor").innerHTML = resultado;
 }
+
+/*function mudaEscuro(){
+    var body = document.body;
+
+    body.style.background = "#393939";
+    body.style.color = "white";
+}
+function mudaClaro(){
+    var body = document.body;
+
+    body.style.background = "#e9e9e9";
+    body.style.color = "black";
+}*/

@@ -9,25 +9,31 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <section>
-        <div class="container">
-            <h1>Calculadora Base</h1>
+    <main>
+        <section class="container">
             <div class="input">
-                Primeiro valor: 
-                <input type="number" name="n1" id="n1">
-                Segundo valor: 
-                <input type="number" name="n2" id="n2">
+                <label><p><h2>Primeiro valor</h2></p></label>
+                <input type="number" id="n1" name="firstNum">
+                <label><p><h2>Segundo valor</h2></p></label>
+                <input type="number" id="n2" name="secondNum">
             </div>
-            <div class="select">
-                <button onclick="somaValor()" id="som">Soma</button>
-                <button onclick="subValor()" id="sub">Subtração</button>
-                <button onclick="multiValor()" id="mul">Multiplicação</button>
-                <button onclick="divValor()" id="div">Divisão</button>
+            <div class="button">
+                <button type="submit" onclick="somaValor()" id="som">Soma</button>
+                <button type="submit" onclick="subValor()" id="sub">Subtração</button>
+                <button type="submit" onclick="multiValor()" id="mul">Multiplicação</button>
+                <button type="submit" onclick="divValor()" id="div">Divisão</button>
             </div>
-            <div class="result">
-                Resultado: 
+	        <div class="resultado">
+                <div class="caixaResult">
+                    <div id="valor">Resultado</div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <footer>
+            <h3>Tema:</h3>
+            <button onclick="mudaEscuro()">Escuro</button>
+            <button onclick="mudaClaro()">Claro</button>
+        </footer>  
+    </main>
 </body>
 </html>
